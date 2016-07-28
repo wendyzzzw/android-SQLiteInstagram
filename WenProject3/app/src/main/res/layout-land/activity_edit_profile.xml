@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="27sp"
+            android:layout_height="27sp"
+            android:background="@drawable/ic_log_out"/>
+        <TextView
+            android:id="@+id/edit_profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="wzhou"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textColorHint="#000"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <project3.wenproject3.image.RoundImageView
+        android:id="@+id/edit_profile_profilepic"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/user"/>
+
+    <TextView
+        android:paddingLeft="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Name: "
+        android:textColor="#000"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/edit_profile_name"
+        android:paddingLeft="10sp"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:paddingTop="10sp"
+        android:paddingLeft="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password: "
+        android:textColor="#000"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/edit_profile_current_pw"
+        android:paddingLeft="10sp"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:hint="Current password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edit_profile_new_pw"
+        android:paddingLeft="10sp"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:hint="New password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edit_profile_new_pw2"
+        android:paddingLeft="10sp"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:hint="New password, again"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/edit_profile_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"/>
+
+</LinearLayout>

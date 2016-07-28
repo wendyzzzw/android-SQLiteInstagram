@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="project3.wenproject3.homepage.PhotoDialog"
+    android:orientation="vertical">
+
+    <project3.wenproject3.image.SquareImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/dialog_photo_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:paddingLeft="5sp"
+        android:paddingRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:gravity="center_vertical">
+
+
+
+            <ImageView
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:background="@drawable/ic_like_black"/>
+            <TextView
+                android:id="@+id/dialog_photo_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:hint="19"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" likes"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

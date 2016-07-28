@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10sp"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12sp"
+        android:paddingBottom="10sp"
+        android:paddingLeft="10sp"
+        android:background="#FFF"
+        android:gravity="center">
+
+        <project3.wenproject3.image.RoundImageView
+            android:id="@+id/view_photo_detailed_profilepic"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/user" />
+
+
+        <TextView
+            android:paddingLeft="10sp"
+            android:id="@+id/view_photo_detailed_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:hint="wzhou"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textColorHint="#000"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <project3.wenproject3.image.SquareImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/view_photo_detailed_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:paddingLeft="5sp"
+        android:paddingRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/view_photo_detailed_like_button"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:background="@drawable/like_empty"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:background="@drawable/ic_like_black"/>
+            <TextView
+                android:id="@+id/view_photo_detailed_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:hint="19"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" likes"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bot"
+    android:paddingTop="10sp"
+    android:paddingBottom="10sp"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:gravity="center_vertical"
+    >
+
+    <project3.wenproject3.image.RoundImageView
+        android:id="@+id/view_like_profilepic"
+        android:layout_width="38sp"
+        android:layout_height="38sp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/view_like_username"
+        android:paddingLeft="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:hint="wzhou"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textColorHint="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" liked your photo."
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <project3.wenproject3.image.SquareImageView
+            android:id="@+id/view_like_photo"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_menu"
+        android:orderInCategory="100"
+        android:title="Music"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_item_music_play"
+                android:icon="@drawable/ic_music_play"
+                android:title="Play Music"
+                app:showAsAction="ifRoom"
+                />
+
+            <item
+                android:id="@+id/menu_item_music_pause"
+                android:icon="@drawable/ic_music_pause"
+                android:title="Pause Music"
+                app:showAsAction="ifRoom"
+                />
+
+        </menu>
+
+
+    </item>
+
+
+    <item
+        android:id="@+id/menu_item_web_view"
+        android:icon="@drawable/ic_web"
+        android:title="Browse Website"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+
+</menu>
